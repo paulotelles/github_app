@@ -1,0 +1,1 @@
+"use strict";var helloHomepage=function(){console.log("Hello Homepage!")};helloHomepage();
