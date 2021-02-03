@@ -1,0 +1,26 @@
+.title {
+  &-big,
+  &-bigwhite {
+    font-size: 36px;
+    color: $darkgray;
+    font-weight: 700;
+  }
+  &-bigwhite {
+    color: $white;
+  }
+  &-mediumwhite {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+  }
+  &-mediumblack {
+    font-size: 20px;
+    color: $black;
+    font-weight: 700;
+  }
+  &-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: $pink;
+  }
+}
