@@ -6,11 +6,43 @@
 // -------------------------
 //  COMPONENTS IMPORT
 //--------------------------
-@import "../components/header";
+@import "../components/texts";
+@import "../components/titles";
 
 // -------------------------
 //  PAGE STYLES
 //--------------------------
 
-.homepage {
+.maincontent {
+  border: 30px solid $pink;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    margin-top: 14px;
+    margin-bottom: 46px;
+  }
+}
+
+.searchdiv {
+  text-align: center;
+  max-width: 434px;
+  &-inputtext {
+    padding: 16px;
+    border: 2px solid $pink;
+    flex-grow: 1;
+  }
+  &-form {
+    width: 100%;
+    display: inline-flex;
+  }
+}
+
+@include breakpoint(mobile) {
+  .maincontent {
+    padding: 20px;
+  }
 }
