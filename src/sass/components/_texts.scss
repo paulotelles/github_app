@@ -1,0 +1,20 @@
+.text {
+  &-extrabigwhite {
+    font-size: 22px;
+    color: $white;
+  }
+  &-big {
+    font-size: 20px;
+    line-height: 26px;
+    color: $darkgray;
+  }
+  &-medium {
+    font-size: 18px;
+    color: $black;
+  }
+  &-small {
+    font-size: 16px;
+    color: $black;
+    line-height: 24px;
+  }
+}
