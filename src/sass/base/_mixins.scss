@@ -1,0 +1,42 @@
+// -------------------------
+//  QUERIES
+//--------------------------
+
+@mixin breakpoint($class) {
+  @if $class == mobile {
+    @media screen and (max-width: 639px) {
+      @content;
+    }
+  }
+
+  @if $class == tablet-max {
+    @media screen and (max-width: 959px) {
+      @content;
+    }
+  }
+
+  @if $class == tablet {
+    @media screen and (min-width: 640px) and (max-width: 959px) {
+      @content;
+    }
+  }
+
+  @if $class == desktop {
+    @media screen and (min-width: 960px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+// -------------------------
+//  ROUNDED BORDERS
+//--------------------------
+
+@mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left) {
+  border-top-left-radius: $top-left;
+  border-top-right-radius: $top-right;
+  border-bottom-right-radius: $bottom-right;
+  border-bottom-left-radius: $bottom-left;
+}
