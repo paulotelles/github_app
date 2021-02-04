@@ -14,11 +14,12 @@
 //--------------------------
 
 .maincontent {
-  border: 30px solid $pink;
+  border: 30px solid $primary-color;
   margin: 0 auto;
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   p {
@@ -28,11 +29,11 @@
 }
 
 .searchdiv {
+  position: relative;
   text-align: center;
-  max-width: 434px;
   &-inputtext {
     padding: 16px;
-    border: 2px solid $pink;
+    border: 2px solid $primary-color;
     flex-grow: 1;
   }
   &-form {
@@ -41,8 +42,18 @@
   }
 }
 
+.display-error {
+  position: absolute;
+  margin-top: 15px;
+}
+
 @include breakpoint(mobile) {
   .maincontent {
     padding: 20px;
+    border: 15px solid $primary-color;
+  }
+
+  .searchdiv-inputtext {
+    padding: 8px;
   }
 }
