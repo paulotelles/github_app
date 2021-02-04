@@ -2,15 +2,16 @@ let buttonSearchUser = document.getElementById("searchusername");
 
 buttonSearchUser.addEventListener("click", (evento) => {
   evento.preventDefault();
-  let userName = document.getElementById("username");
+  let userNameField = document.getElementById("username");
+  let userName = document.getElementById("username").value;
 
   /* abrindo a comunicação com a api*/
-  fetch(`https://api.github.com/users/${userName.value}`)
+  fetch(`https://api.github.com/users/${userName}`)
     .then((resposta) => {
       /*se encontrar o usuário*/
       if (resposta.ok) {
-        window.location = `./another-page.html?username=${userName.value}`;
-        return (userName.value = "");
+        window.location = `./another-page.html?username=${userName}`;
+        return (userNameField.value = "");
       }
 
       /*se o servidor responder com 404*/
@@ -27,11 +28,11 @@ buttonSearchUser.addEventListener("click", (evento) => {
             title="close"
             >×</a
           >
-          <strong>Usuário: ${userName.value}</strong> não encontrado, tente novamente.
+          <strong>Usuário: ${userName}</strong> não encontrado, tente novamente.
         </div>
         `;
         warningDiv.innerHTML = warnBootstrap;
-        return (userName.value = "");
+        return (userNameField.value = "");
       }
 
       /*caso ocorra algum erro*/
