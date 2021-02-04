@@ -9,8 +9,8 @@ buttonSearchUser.addEventListener("click", (evento) => {
     .then((resposta) => {
       /*se encontrar o usuário*/
       if (resposta.ok) {
-        userName.value = "";
-        return (window.location = `./another-page.html?username=${userName.value}`);
+        window.location = `./another-page.html?username=${userName.value}`;
+        return (userName.value = "");
       }
 
       /*se o servidor responder com 404*/
