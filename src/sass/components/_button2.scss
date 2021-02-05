@@ -1,0 +1,21 @@
+.button2 {
+  background: none;
+  color: $primary-color;
+  padding: 3px;
+  border: none;
+  border-bottom: 2px solid $primary-color;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: $primary-font;
+  cursor: pointer;
+  &:hover {
+    color: $gray;
+    border-color: $gray;
+  }
+}
+
+@include breakpoint(tablet-max) {
+  .button2 {
+    font-size: 14px;
+  }
+}

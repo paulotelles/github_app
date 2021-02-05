@@ -1,0 +1,13 @@
+.starFilter {
+  background-color: $lightgray;
+  padding: 18px;
+  width: 280px;
+  border: none;
+  font-size: 14px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.starFilter:focus {
+  outline: none;
+}

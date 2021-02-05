@@ -1,0 +1,37 @@
+.card {
+  background-color: $white;
+  width: 450px;
+  height: 274px;
+  padding: 31px 25px;
+  .title-mediumblack {
+    max-width: 70%;
+    max-height: 35px;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+  .title-subtitle {
+    margin-top: 17px;
+    margin-bottom: 9px;
+    max-height: 23px;
+    overflow: hidden;
+  }
+  .text-small {
+    margin-bottom: 27px;
+    max-height: 72px;
+    overflow: hidden;
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@include breakpoint(tablet-max) {
+  .card {
+    width: 100%;
+    min-width: 240px;
+    max-width: 450px;
+    padding: 15px 10px;
+  }
+}
