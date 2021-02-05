@@ -11,6 +11,10 @@
   &-medium {
     font-size: 18px;
     color: $black;
+    .primarycolor {
+      font-weight: 700;
+      color: $primary-color;
+    }
   }
   &-mediumwhite {
     font-size: 18px;
@@ -30,6 +34,12 @@
     }
     &-extrabigwhite {
       font-size: 18px;
+    }
+    &-medium {
+      font-size: 15px;
+    }
+    &-small {
+      font-size: 14px;
     }
   }
 }

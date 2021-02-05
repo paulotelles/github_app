@@ -8,8 +8,9 @@
   font-weight: 600;
   border: none;
   font-family: $primary-font;
+  cursor: pointer;
   &:hover {
-    font-weight: 700;
+    color: $gray;
     text-decoration: underline;
   }
 }
