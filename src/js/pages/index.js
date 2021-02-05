@@ -10,7 +10,7 @@ buttonSearchUser.addEventListener("click", (evento) => {
     .then((resposta) => {
       /*se encontrar o usuário*/
       if (resposta.ok) {
-        window.location = `./another-page.html?username=${userName}`;
+        window.location = `./repositories.html?username=${userName}`;
         return (userNameField.value = "");
       }
 

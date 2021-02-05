@@ -12,9 +12,24 @@
     font-size: 18px;
     color: $black;
   }
+  &-mediumwhite {
+    font-size: 18px;
+    color: $white;
+  }
   &-small {
     font-size: 16px;
     color: $black;
     line-height: 24px;
+  }
+}
+
+@include breakpoint(tablet-max) {
+  .text {
+    &-mediumwhite {
+      font-size: 14px;
+    }
+    &-extrabigwhite {
+      font-size: 18px;
+    }
   }
 }

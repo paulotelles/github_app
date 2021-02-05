@@ -1,0 +1,77 @@
+// -------------------------
+//  BASE IMPORT
+//--------------------------
+@import "../base/all";
+
+// -------------------------
+//  COMPONENTS IMPORT
+//--------------------------
+@import "../components/texts";
+@import "../components/titles";
+@import "../components/button";
+
+// -------------------------
+//  PAGE STYLES
+//--------------------------
+
+.maincontent {
+  position: relative;
+}
+
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 51px 37px 37px 45px;
+  background-color: $primary-color;
+  &-imgcontainer {
+    width: 259px;
+    height: 261px;
+    margin-bottom: 27px;
+  }
+  &-followers {
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 19px;
+
+    p:first-child {
+      margin-right: 35px;
+    }
+  }
+  &-buttonarea {
+    position: absolute;
+    left: 45px;
+    bottom: 37px;
+  }
+  .user-bio {
+    max-height: 80px;
+    overflow: hidden;
+  }
+}
+
+@include breakpoint(tablet-max) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 41px 30px 30px 36px;
+    &-imgcontainer {
+      margin: 0 auto;
+      width: 240px;
+      height: 248px;
+      margin-bottom: 21px;
+    }
+    &-buttonarea {
+      position: static;
+      display: flex;
+      justify-content: center;
+      margin: 13px auto 0;
+    }
+    &-followers {
+      margin-top: 13px;
+      margin-bottom: 14px;
+    }
+  }
+}

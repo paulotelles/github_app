@@ -24,3 +24,11 @@
     color: $primary-color;
   }
 }
+
+@include breakpoint(tablet-max) {
+  .title {
+    &-bigwhite {
+      font-size: 25px;
+    }
+  }
+}
