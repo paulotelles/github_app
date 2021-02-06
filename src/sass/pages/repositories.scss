@@ -9,6 +9,9 @@
 @import "../components/texts";
 @import "../components/titles";
 @import "../components/button";
+@import "../components/button2";
+@import "../components/select";
+@import "../components/card";
 
 // -------------------------
 //  PAGE STYLES
@@ -45,10 +48,29 @@
     left: 45px;
     bottom: 37px;
   }
-  .user-bio {
-    max-height: 80px;
-    overflow: hidden;
-  }
+}
+
+.user-bio {
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.repositories {
+  background-color: $gray2;
+  padding: 45px;
+  margin-left: 400px;
+}
+
+.repositories-filter {
+  text-align: right;
+  margin-bottom: 65px;
+}
+
+.repositories-cardarea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 45px;
 }
 
 @include breakpoint(tablet-max) {
@@ -56,7 +78,7 @@
     position: static;
     width: 100%;
     height: auto;
-    padding: 41px 30px 30px 36px;
+    padding: 31px 20px 26px 20px;
     &-imgcontainer {
       margin: 0 auto;
       width: 240px;
@@ -73,5 +95,21 @@
       margin-top: 13px;
       margin-bottom: 14px;
     }
+  }
+
+  .repositories {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .repositories-cardarea {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .repositories-filter {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 }
