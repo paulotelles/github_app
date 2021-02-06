@@ -1,7 +1,7 @@
 .card {
   background-color: $white;
-  width: 450px;
-  height: 274px;
+  width: calc(50% - 20px);
+  height: auto;
   padding: 31px 25px;
   .title-mediumblack {
     max-width: 70%;
@@ -27,7 +27,7 @@
   justify-content: space-between;
 }
 
-@include breakpoint(tablet-max) {
+@include breakpoint(mobile) {
   .card {
     width: 100%;
     min-width: 240px;
