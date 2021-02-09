@@ -1,24 +1,35 @@
 .card {
+  display: flex;
+  flex-wrap: wrap;
   background-color: $white;
   width: calc(50% - 20px);
   height: auto;
   padding: 31px 25px;
+  &-header {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+
   .title-mediumblack {
     max-width: 70%;
-    height: 35px;
-    overflow: hidden;
+    //height: 35px;
+    //overflow: hidden;
     text-transform: uppercase;
   }
   .title-subtitle {
-    margin-top: 17px;
+    width: 100%;
     margin-bottom: 9px;
     height: 23px;
     overflow: hidden;
   }
   .text-small {
+    width: 100%;
     margin-bottom: 27px;
-    height: 72px;
-    overflow: hidden;
+    // height: 72px;
+    // overflow: hidden;
+  }
+  .button2 {
+    align-self: flex-end;
   }
 }
 

@@ -57,6 +57,7 @@
 
 .user-avatar {
   width: 100%;
+  @include border-radius(50%, 50%, 50%, 50%);
 }
 
 .repositories {
