@@ -1,11 +1,4 @@
 function createSideBar(model) {
-  // tratando os valores do objeto que são nulos
-  // Object.keys(model).forEach((key) => {
-  //   if (model[key] == null) {
-  //     model[key] = " ";
-  //   }
-  // });
-
   //selecionando a div do sidebar
   let sectionSideBar = document.querySelector(".sidebar");
 
