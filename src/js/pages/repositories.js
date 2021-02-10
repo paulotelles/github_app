@@ -7,26 +7,32 @@ const { createSideBar } = require("../modules/sidebar");
 let url_string = window.location.href;
 let url = new URL(url_string);
 let userName = url.searchParams.get("username");
+console.log(userName);
+if (userName === null) {
+  return (window.location = `./index.html`);
+}
 
 //fazendo a primeira requisição com os dados necessários no sidebar.
 
-let userData = apiRequest(`https://api.github.com/users/${userName}`).then(
-  (userData) => {
-    //função para construção do sidebar
-    createSideBar(userData);
+let userData = apiRequest(
+  `https://api.github.com/users/${userName}`,
+  `./index.html`
+).then((userData) => {
+  //função para construção do sidebar
+  createSideBar(userData);
 
-    let newSearch = document.querySelector(".user-research");
-    newSearch.addEventListener("click", (event) => {
-      event.preventDefault();
-      return (window.location = `./index.html`);
-    });
-  }
-);
+  let newSearch = document.querySelector(".user-research");
+  newSearch.addEventListener("click", (event) => {
+    event.preventDefault();
+    return (window.location = `./index.html`);
+  });
+});
 
 //fazendo a requisão para dar carga na parte dos repositórios
 function getUserRepo(userName) {
   let userRepo = apiRequest(
-    `https://api.github.com/users/${userName}/repos`
+    `https://api.github.com/users/${userName}/repos`,
+    `./index.html`
   ).then((userData) => {
     createCard(userData);
 
@@ -52,7 +58,3 @@ let filterStars = document.querySelector(".starFilter");
 filterStars.addEventListener("change", () => {
   getUserRepo(userName);
 });
-
-//
-// colocando um listener no button do sidebar
-//
