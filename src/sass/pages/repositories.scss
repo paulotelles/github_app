@@ -55,6 +55,11 @@
   overflow: hidden;
 }
 
+.user-avatar {
+  width: 100%;
+  @include border-radius(50%, 50%, 50%, 50%);
+}
+
 .repositories {
   background-color: $gray2;
   padding: 45px;

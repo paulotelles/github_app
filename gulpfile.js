@@ -4,13 +4,19 @@ const sass = require("gulp-sass");
 const log = require("fancy-log");
 const uglify = require("gulp-uglify");
 const babel = require("gulp-babel");
-var prefix = require("gulp-autoprefixer");
+const prefix = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
+const browserify = require("gulp-browserify");
 
 // Process Scripts
 gulp.task("js", function () {
   return gulp
     .src(["src/js/pages/*.js"])
+    .pipe(
+      browserify({
+        insertGlobals: true,
+      })
+    )
 
     .pipe(
       babel({
