@@ -17,11 +17,6 @@ function createCard(model) {
 
   model.forEach((element) => {
     //percorrendo os objetos e trocando os valores nulos por vazio"
-    // Object.keys(element).forEach((key) => {
-    //   if (element[key] == null) {
-    //     element[key] = " ";
-    //   }
-    // });
 
     //criando a div do card e adicionando a class
     let card = document.createElement("div");

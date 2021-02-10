@@ -7,7 +7,6 @@ const { createSideBar } = require("../modules/sidebar");
 let url_string = window.location.href;
 let url = new URL(url_string);
 let userName = url.searchParams.get("username");
-console.log(userName);
 if (userName === null) {
   return (window.location = `./index.html`);
 }
