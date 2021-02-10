@@ -1,15 +1,12 @@
 //função genérica para comunicação com API
-/*module.exports.apiRequest = (urlOrigin) => {
-  
-}*/
 
-function apiRequest(urlOrigin) {
+function apiRequest(urlOrigin, urlError) {
   return fetch(urlOrigin)
     .then((resposta) => {
       if (resposta.ok) {
         return resposta.json();
       }
-      return console.log(resposta);
+      return (window.location = urlError);
     })
     .then((json) => {
       return json;
