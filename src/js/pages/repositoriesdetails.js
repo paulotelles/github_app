@@ -6,9 +6,6 @@ let url = new URL(url_string);
 let userName = url.searchParams.get("username");
 let repository = url.searchParams.get("reponame");
 
-console.log(userName);
-console.log(repository);
-
 if (userName === null || repository === null) {
   return (window.location = `./index.html`);
 }
@@ -23,7 +20,6 @@ let repositoryDetails = apiRequest(
   `https://api.github.com/repos/${userName}/${repository}`,
   `./index.html`
 ).then((repoData) => {
-  console.log(repoData);
   createContainer(repoData);
 
   let buttonGit = document.querySelector(".buttonGit");

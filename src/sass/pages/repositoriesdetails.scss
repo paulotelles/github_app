@@ -12,6 +12,7 @@
 @import "../components/button2";
 @import "../components/select";
 @import "../components/card";
+@import "../components/loadbar";
 
 // -------------------------
 //  PAGE STYLES
@@ -38,24 +39,25 @@
   &-header {
     padding: 12px 30px;
   }
-  .repo-language {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .repo-stars {
-    span {
-      font-weight: 700;
-    }
-  }
-
-  .repo-description {
-    margin-bottom: 38px;
-  }
 
   .button2 {
     width: 125px;
   }
+}
+
+.repo-stars {
+  span {
+    font-weight: 700;
+  }
+}
+
+.repo-language {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.repo-description {
+  margin-bottom: 38px;
 }
 
 .repository {
@@ -77,9 +79,8 @@
       padding: 12px 20px;
       text-align: center;
     }
-
-    .buttonGit {
-      margin: 0 auto;
-    }
+  }
+  .buttonGit {
+    margin: 0 auto;
   }
 }
