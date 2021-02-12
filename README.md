@@ -34,9 +34,13 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 ## Github API
 
 - Api Documentation: `https://docs.github.com/en/rest`
+
 - Endpoints:
+
   > User Details: `https://api.github.com/users/{username}`
+  
   > User Repositories: `https://api.github.com/users/{username}/repos`
+  
   > Repository Details: `https://api.github.com/repos/{full_name}`
 
 ## Folders / Pastas
