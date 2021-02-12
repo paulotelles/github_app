@@ -16,6 +16,7 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 - Babel
 - Sass
 - Browsersync
+- Javascript
 
 ## Initializing / Iniciando
 
