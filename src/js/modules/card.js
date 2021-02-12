@@ -41,8 +41,8 @@ function createCard(model) {
         ${element.description}
       </p>`
         }
-        <button class="button2" data-repofullname="${
-          element.full_name
+        <button class="button2" data-reponame="${
+          element.name
         }">VER DETALHES</button>
         `;
     cardArea.appendChild(card);

@@ -40,8 +40,8 @@ function getUserRepo(userName) {
     buttonDetails.forEach((button) => {
       button.addEventListener("click", (event) => {
         event.preventDefault();
-        let repoFullName = button.dataset.repofullname;
-        return (window.location = `./repositoriesdetails.html?repofullname=${repoFullName}`);
+        let repoName = button.dataset.reponame;
+        return (window.location = `./repositoriesdetails.html?username=${userName}&reponame=${repoName}`);
       });
     });
   });

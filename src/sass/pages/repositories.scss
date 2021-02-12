@@ -12,6 +12,7 @@
 @import "../components/button2";
 @import "../components/select";
 @import "../components/card";
+@import "../components/loadbar";
 
 // -------------------------
 //  PAGE STYLES
@@ -64,6 +65,7 @@
   background-color: $gray2;
   padding: 45px;
   margin-left: 400px;
+  height: 100vh;
 }
 
 .repositories-filter {
