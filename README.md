@@ -5,6 +5,10 @@ This is a standard for basic projects based on HTML + Sass and with support for 
 
 Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com suporte para multiplas páginas.
 
+## Live Version
+
+`https://paulotelles.github.io/github_app/index.html`
+
 ## Technologies / Tecnologias
 
 - HTML
@@ -12,6 +16,7 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 - Babel
 - Sass
 - Browsersync
+- Javascript
 
 ## Initializing / Iniciando
 
@@ -27,6 +32,18 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 
 > Para criar novas páginas basta adicionar os respectivos arquivos {nome}.html na raiz do projeto.
 
+## Github API
+
+- Api Documentation: `https://docs.github.com/en/rest`
+
+- Endpoints:
+
+  > User Details: `https://api.github.com/users/{username}`
+  
+  > User Repositories: `https://api.github.com/users/{username}/repos`
+  
+  > Repository Details: `https://api.github.com/repos/{full_name}`
+
 ## Folders / Pastas
 
 ```sh
@@ -39,6 +56,7 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 │    ├── img/
 │    │
 │    ├── js/
+│    │   ├── modules / Components scripts / Scripts dos componentes
 │    │   ├── pages/ # Page Scripts / Scripts das páginas
 │    │
 │    ├── sass/
