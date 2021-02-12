@@ -1,14 +1,18 @@
 function createSideBar(model) {
   //selecionando a div do sidebar
   let sectionSideBar = document.querySelector(".sidebar");
-
+  console.log(model);
   //gerando os dados do sidebar com base no model recebido da API
   let sideBarData = `<div class="sidebar-imgcontainer">
         <img src="${model.avatar_url}" class="user-avatar"/>
     </div>
-    <h3 class="user-name title-bigwhite">${model.name}</h3>
     ${
       model.name === null
+        ? `<h3 class="user-name title-bigwhite">${model.login}</h3>`
+        : `<h3 class="user-name title-bigwhite">${model.name}</h3>`
+    }
+    ${
+      model.bio === null
         ? ""
         : `<p class="user-bio text-mediumwhite">
     ${model.bio}
