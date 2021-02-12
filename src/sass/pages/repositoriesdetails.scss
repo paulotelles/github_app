@@ -1,0 +1,86 @@
+// -------------------------
+//  BASE IMPORT
+//--------------------------
+@import "../base/all";
+
+// -------------------------
+//  COMPONENTS IMPORT
+//--------------------------
+@import "../components/texts";
+@import "../components/titles";
+@import "../components/button";
+@import "../components/button2";
+@import "../components/select";
+@import "../components/card";
+@import "../components/loadbar";
+
+// -------------------------
+//  PAGE STYLES
+//--------------------------
+
+.maincontent {
+  background-color: $gray2;
+  padding: 45px;
+  height: 100vh;
+}
+
+.container {
+  &-header {
+    background-color: $primary-color;
+    width: 100%;
+  }
+  &-main {
+    background: $white;
+    padding: 30px 23px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-header {
+    padding: 12px 30px;
+  }
+
+  .button2 {
+    width: 125px;
+  }
+}
+
+.repo-stars {
+  span {
+    font-weight: 700;
+  }
+}
+
+.repo-language {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.repo-description {
+  margin-bottom: 38px;
+}
+
+.repository {
+  margin-top: 43px;
+}
+
+@include breakpoint(mobile) {
+  .maincontent {
+    padding: 20px;
+  }
+  .returnButton {
+    width: 100%;
+  }
+  .container {
+    &-main {
+      padding: 20px 15px 20px 20px;
+    }
+    &-header {
+      padding: 12px 20px;
+      text-align: center;
+    }
+  }
+  .buttonGit {
+    margin: 0 auto;
+  }
+}
