@@ -1,1 +1,0 @@
-"use strict";var helloAnotherPage=function(){console.log("Hello Another Page!")};helloAnotherPage();
