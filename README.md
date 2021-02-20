@@ -56,7 +56,7 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 │    ├── img/
 │    │
 │    ├── js/
-│    │   ├── modules / Components scripts / Scripts dos componentes
+│    │   ├── modules / # Components scripts / Scripts dos componentes
 │    │   ├── pages/ # Page Scripts / Scripts das páginas
 │    │
 │    ├── sass/
