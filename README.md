@@ -13,12 +13,12 @@ Objetivo: Desenvolver uma aplicação que busca dados do usuário e seus reposit
 
 Desafios:
 
-- [x] Fazer a comunicação com a API do Github
-- [x] Trazer informações sobre o perfil do usuário
-- [x] Trazer informações sobre todos os repositórios públicos do usuário.
-- [x] Criar filtro para ordenação dos repositórios por estrelas.
-- [x] Criar uma pagina para detalhamento do repositório do usuário.
-- [x] Tratar os dados nulos retornados da API do Github.
+- [x] Communicate with the Github API / Fazer a comunicação com a API do Github
+- [x] Get user profile information. / Trazer informações sobre o perfil do usuário
+- [x] Get information about all user's public repositories. / Trazer informações sobre todos os repositórios públicos do usuário.
+- [x] Criar filtro para ordenação dos repositórios por estrelas. / Create filter for ordering repositories by stars.
+- [x] Create a page for detailing the user's repository. / Criar uma pagina para detalhamento do repositório do usuário.
+- [x] Treating returning null when consuming Github API. / Tratar os dados nulos retornados da API do Github.
 
 
 ## :rocket: Technologies / Tecnologias
