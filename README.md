@@ -1,15 +1,27 @@
-# Gulp Static Boilerplate
+# Github App
+
+This application was developed to consult Github user profiles, bringing information about the user and the repositories through communication with the Github API.
+
+Esse aplicativo foi desenvolvido para fazer consultas aos perfis de usuários do Github, trazendo informações sobre o usuário e os repositórios através da comunicação com a API do Github.
 
 
-This is a standard for basic projects based on HTML + Sass and with support for multiple pages.
+## :pushpin: Goals and challenges / Objetivos e desafios
 
-Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com suporte para multiplas páginas.
+Objective: Develop an application that searches for user data and their repositories, within the Github application.
 
-## Live Version
+Objetivo: Desenvolver uma aplicação que busca dados do usuário e seus repositórios, dentro da aplicação do Github.
 
-`https://paulotelles.github.io/github_app/index.html`
+Desafios:
 
-## Technologies / Tecnologias
+- [x] Fazer a comunicação com a API do Github
+- [x] Trazer informações sobre o perfil do usuário
+- [x] Trazer informações sobre todos os repositórios públicos do usuário.
+- [x] Criar filtro para ordenação dos repositórios por estrelas.
+- [x] Criar uma pagina para detalhamento do repositório do usuário.
+- [x] Tratar os dados nulos retornados da API do Github.
+
+
+## :rocket: Technologies / Tecnologias
 
 - HTML
 - Gulp
@@ -18,21 +30,31 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 - Browsersync
 - Javascript
 
-## Initializing / Iniciando
+
+## :movie_camera: Live Version
+
+`https://paulotelles.github.io/github_app/index.html`
+
+
+## :technologist: How to use / Como utilizar
+
+You can start by downloading the project to your machine.
+
+Inicialmente deve começar baixando o projeto em sua máquina.
+
+
+### Initializing / Iniciando
+
+To start, you must run the first command inside the folder you downloaded the project to install all dependencies. After installation, which may take a few minutes depending on your internet, you can compile and run the program using the second command.
+
+Para iniciar você deve rodar o primeiro comando dentro da pasta que você baixou o projeto para instalar todas as dependências. Após a instalação que pode demorar alguns minutos dependendo da sua internet, você poderá compilar e executar o programa utilizando o segundo comando.
 
 `yarn install`
 </br>
 `gulp server`
 
-## Acessing Multiple Pages / Acessando Múltiplas Páginas
 
-`http://localhost:3000/another-page.html`
-
-> To create new pages just add the respective files {name} .html at the root of the project.
-
-> Para criar novas páginas basta adicionar os respectivos arquivos {nome}.html na raiz do projeto.
-
-## Github API
+### Github API
 
 - Api Documentation: `https://docs.github.com/en/rest`
 
@@ -43,28 +65,3 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
   > User Repositories: `https://api.github.com/users/{username}/repos`
   
   > Repository Details: `https://api.github.com/repos/{full_name}`
-
-## Folders / Pastas
-
-```sh
-│
-├── README.md
-│
-└── dist/ # Folder with the finals style and scripts / Pasta com os arquivos finais de estilo e scripts.
-│
-└── src
-│    ├── img/
-│    │
-│    ├── js/
-│    │   ├── modules / # Components scripts / Scripts dos componentes
-│    │   ├── pages/ # Page Scripts / Scripts das páginas
-│    │
-│    ├── sass/
-│        ├── base/
-│        ├── components/
-│        ├── pages # Estilos das páginas (Apenas esses arquivos são convertidos para CSS pelo Gulp)
-│
-├── gulpfile.js # Gulp Configs
-│
-│
-```
